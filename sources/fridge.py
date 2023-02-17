@@ -35,7 +35,6 @@ class Fridge:
             default_sauce = 0
         self._ingredients: Dict[str, int] = dict.fromkeys(ALL_INGREDIENTS, default_ingredients)
         self._sauces: Dict[str, int] = dict.fromkeys(ALL_SAUCES, default_sauce)
-    def __init__(self, default: int = 0):
         self._count: Dict[str, int] = dict.fromkeys(ALL_INGREDIENTS, 0)
 
     @property
